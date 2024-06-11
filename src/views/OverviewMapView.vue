@@ -44,9 +44,11 @@ import { Map as MapboxMapObject } from 'mapbox-gl';
 import { computed, ref } from 'vue';
 import axios from 'axios';
 import { mapboxLongLat } from '@/utils/helper';
-
 import { Mission } from '@/types/api/Mission';
-// import { Flight } from '@/types/api/Flight';
+
+import VueTest from 'vue';
+
+
 
 @Options({
   components: {
@@ -56,6 +58,7 @@ import { Mission } from '@/types/api/Mission';
     MapboxPopup,
   },
 })
+
 /* eslint-disable @typescript-eslint/no-explicit-any*/
 export default class OverviewMapView extends Vue {
   // collapse elements that are active are stored in here

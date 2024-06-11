@@ -6,6 +6,8 @@ import PrimeVue from 'primevue/config';
 import i18n from '@/i18n';
 import VueCookies from 'vue-cookies';
 
+import VueMapboxTs from "vue-mapbox-ts";
+
 /* eslint-disable @typescript-eslint/no-explicit-any*/
 // fortawesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -20,6 +22,8 @@ app.use(PrimeVue);
 app.use(router);
 app.use(i18n as any);
 app.use(VueCookies);
+
+app.use(VueMapboxTs);
 app.config.globalProperties.$t = (i18n as any).t2;
 app.mount('#app');
 
